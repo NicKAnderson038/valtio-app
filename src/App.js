@@ -1,5 +1,6 @@
 import React from "react"
 import { proxy, useProxy } from "valtio"
+// import { proxy, useProxy } from './valtio'
 
 // You wrap your state
 const state = proxy({ number: 0 })
