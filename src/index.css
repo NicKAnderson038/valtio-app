@@ -1,13 +1,91 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://rsms.me/inter/inter.css");
+
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #9a9a9a;
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  user-select: none;
+}
+
+svg {
+  pointer-events: none;
+}
+
+path {
+  pointer-events: auto;
+}
+
+.ticks {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  font-size: 20px;
+  font-weight: 900;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-variant-numeric: tabular-nums;
+  color: rgb(244, 168, 180);
+  background: black;
+  padding: 2px 6px 2px 6px;
+  border-radius: 5%;
+}
+
+.figure {
+  font-variant-numeric: tabular-nums;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  font-weight: 800;
+  font-size: 30em;
+  letter-spacing: -20px;
+  pointer-events: none;
+  color: black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.logo {
+  position: absolute;
+  right: 150px;
+  bottom: 150px;
+}
+
+.logo > svg {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.play-btn__svg{
+  transition: 1s; 
+  fill:#7c7c7c; 
+  opacity: .5;
+  position: relative;
+  animation: letter 2s ease 
+}
+
+.top-btn__svg:hover {
+  fill: #62ec5f;
+  opacity: 1;
+}
+
+.bottom-btn__svg:hover {
+  fill: #f4737c;
+  opacity: 1;
 }

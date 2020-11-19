@@ -1,0 +1,20 @@
+{
+    "files.autoSave": "onFocusChange",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "workbench.colorCustomizations": {
+        "tab.activeBorder": "#f4ec07",
+        "tab.activeBackground": "#0c0057",
+        "tab.hoverForeground": "#f4a907",
+        "tab.hoverBackground": "#d79a0012"
+    },
+    "eslint.lintTask.enable": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
+    "todo-tree.tree.showInExplorer": false,
+    "taskExplorer.showLastTasks": false
+}
